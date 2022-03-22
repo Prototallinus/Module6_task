@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS-Start. 5 задача</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Tell me who you are</h1>
+    <div id="insertData">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name" onkeyup="fnamecopy(this);">
+          <label for="mname">Middle Name</label>
+          <input type="text" id="mname" name="middlename" placeholder="Your middle name" onkeyup="mnamecopy(this);">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name" onkeyup="lnamecopy(this);">
+          
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="russia">Russia</option>
+            <option value="italy">Italy</option>
+            <option value="other">Other</option>
+          </select>
+        
+          <input type="submit" id = "submit_cancel" value="Output the text to the console and delete it from the form">
+        </form>
+      </div>
+
+      <div id = "duplicateField">
+        <td>
+            <input id="duplicatefname" type="text" name="name" value=" " />
+        </td>
+        <td>
+            <input id="duplicatemname" type="text" name="name" value=" " />
+        </td>
+        <td>
+            <input id="duplicatelname" type="text" name="name" value=" " />
+        </td>
+      </div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
